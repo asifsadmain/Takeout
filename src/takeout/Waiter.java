@@ -10,7 +10,8 @@ package takeout;
  * @author asif
  */
 public interface Waiter {
-    public void addPatty(String patty);
-    public void addSauce(String sauce);
-    public void addCheese(String cheese);
+    public void addPatty();
+    public void addSauce();
+    public void addCheese();
+    public Burger getBurger();
 }

@@ -19,6 +19,19 @@ public class Takeout {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Customer student = new Customer();
+        
+        Waiter order1 = new BeefBurger();
+        Waiter order2 = new ChickenBurger();
+        
+        student.construct(order1);
+        student.construct(order2);
+        
+        Burger beefBurger = order1.getBurger();
+        Burger chickenBurger = order2.getBurger();
+        
+        System.out.println("The beef burger is made of "+beefBurger.getPatty()+","+beefBurger.getSauce()+","+beefBurger.getCheese());
+        System.out.println("The chicken burger is made of "+chickenBurger.getPatty()+","+chickenBurger.getSauce()+","+chickenBurger.getCheese());
     }
     
 }

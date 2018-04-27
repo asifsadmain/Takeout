@@ -10,23 +10,29 @@ package takeout;
  * @author asif
  */
 public class ChickenBurger implements Waiter{
+    Burger chickenBurger = new Burger();
 
     public ChickenBurger() {
     }
-    
+
     @Override
-    public void addCheese(String cheese) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void addPatty() {
+        chickenBurger.setPatty("chicken patty");
     }
 
     @Override
-    public void addSauce(String sauce) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void addSauce() {
+        chickenBurger.setSauce("tomato sauce");
     }
 
     @Override
-    public void addPatty(String patty) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void addCheese() {
+        chickenBurger.setCheese("special cheese");
+    }
+
+    @Override
+    public Burger getBurger() {
+        return chickenBurger;
     }
     
     
